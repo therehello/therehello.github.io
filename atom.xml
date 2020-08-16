@@ -297,13 +297,13 @@
   </entry>
   
   <entry>
-    <title>中山8.9</title>
-    <link href="https://www.therehello.top/posts/travel/Zhongshan/8.9.html/"/>
-    <id>https://www.therehello.top/posts/travel/Zhongshan/8.9.html/</id>
+    <title>中山8.20</title>
+    <link href="https://www.therehello.top/posts/travel/Zhongshan/8.20.html/"/>
+    <id>https://www.therehello.top/posts/travel/Zhongshan/8.20.html/</id>
     <published>2019-08-20T00:00:00.000Z</published>
-    <updated>2020-07-26T05:45:17.895Z</updated>
+    <updated>2020-07-26T05:46:08.590Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="今日总结"><a href="#今日总结" class="headerlink" title="今日总结"></a>今日总结</h2><a id="more"></a><p>T1. 水（<del>可惜我不会打…</del>）</p><p>先bfs跑一遍洪水泛滥的，记录一下每个位置在哪一秒时被淹了。然后再bfs跑一遍人,在下一个时刻不能跑洪水泛滥的以及石头所在的，直到遇到住所中break就行了。</p><p>T2. 是一道状压题（<del>没看出来…</del>）跟棋盘放置差不多</p><p>打的dfs，死活printf不了long double,然后就手动保留小数（忘了进位问题…)然后就40。原来要用%Lf输出，95呐，就超时了一个点（<del>还是数据水</del>）</p><p>T3. 单调栈（<del>没听过…</del>)</p><p>T4. Tarjan缩点乱搞（<del>不会不会</del>）</p><hr><h4 id="看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（貌似吧考的都说完了）"><a href="#看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（貌似吧考的都说完了）" class="headerlink" title="看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（貌似吧考的都说完了）"></a>看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（<del>貌似吧考的都说完了</del>）</h4>]]></content>
+    <content type="html"><![CDATA[<h2 id="今日总结"><a href="#今日总结" class="headerlink" title="今日总结"></a>今日总结</h2><a id="more"></a><h3 id="T1"><a href="#T1" class="headerlink" title="T1:"></a>T1:</h3><p>表示完全没有思路，于是就打起了贪心,然后0分??? (之前贪心总能拿点分呐!)</p><p>正解是dp乱搞???</p><h3 id="T2"><a href="#T2" class="headerlink" title="T2:"></a>T2:</h3><p>就这道题有点思想了,结果样例没看懂…</p><p>正解还是dp…设$f[i]$为i个时间内回到家的方案数,在这i个时间内可能经过家,也可能没有经过.这..这不就是卡特兰数吗?但不是…因为在这道题中限制了在最多m个时间内回到家.</p><p>再设$Dp[i]$为i个时间内刚好回到家的方案数,在这i个时间内没有经过家,则$f[i]=\sum_{j=1}^{min(i,m)}{f[i-j]*Dp[j]}$.这个$Dp[i]$也形似卡特兰数,可惜也不是,因为卡特兰数0可以与1相等,不符合我们的要求,但我们可以略加改进.</p><p>考虑卡特兰数可以走到对角线上,但我们并不想让它走到上面,于是我们在这个对角线下再画一条线,先向右走1格,求出到从(0,1)到(5,4)的方案数即可.在这道题中即可以先向左,也可以先向右.所以将求出的方案数*2即可.</p><p>如图所示：</p><p><img src="https://s2.ax1x.com/2019/08/21/mN3kiF.png" alt=""></p><p>由于n比较大，所以需要用矩阵快速幂优化,这里就跳过了.</p><h3 id="T3："><a href="#T3：" class="headerlink" title="T3："></a>T3：</h3><p>完全没得思路,想找循环发现不是,于是果断暴力走起。</p><p>正解是<del>神仙</del>类欧???  不会…</p>]]></content>
     
     <summary type="html">
     
@@ -322,13 +322,13 @@
   </entry>
   
   <entry>
-    <title>中山8.20</title>
-    <link href="https://www.therehello.top/posts/travel/Zhongshan/8.20.html/"/>
-    <id>https://www.therehello.top/posts/travel/Zhongshan/8.20.html/</id>
+    <title>中山8.9</title>
+    <link href="https://www.therehello.top/posts/travel/Zhongshan/8.9.html/"/>
+    <id>https://www.therehello.top/posts/travel/Zhongshan/8.9.html/</id>
     <published>2019-08-20T00:00:00.000Z</published>
-    <updated>2020-07-26T05:46:08.590Z</updated>
+    <updated>2020-07-26T05:45:17.895Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="今日总结"><a href="#今日总结" class="headerlink" title="今日总结"></a>今日总结</h2><a id="more"></a><h3 id="T1"><a href="#T1" class="headerlink" title="T1:"></a>T1:</h3><p>表示完全没有思路，于是就打起了贪心,然后0分??? (之前贪心总能拿点分呐!)</p><p>正解是dp乱搞???</p><h3 id="T2"><a href="#T2" class="headerlink" title="T2:"></a>T2:</h3><p>就这道题有点思想了,结果样例没看懂…</p><p>正解还是dp…设$f[i]$为i个时间内回到家的方案数,在这i个时间内可能经过家,也可能没有经过.这..这不就是卡特兰数吗?但不是…因为在这道题中限制了在最多m个时间内回到家.</p><p>再设$Dp[i]$为i个时间内刚好回到家的方案数,在这i个时间内没有经过家,则$f[i]=\sum_{j=1}^{min(i,m)}{f[i-j]*Dp[j]}$.这个$Dp[i]$也形似卡特兰数,可惜也不是,因为卡特兰数0可以与1相等,不符合我们的要求,但我们可以略加改进.</p><p>考虑卡特兰数可以走到对角线上,但我们并不想让它走到上面,于是我们在这个对角线下再画一条线,先向右走1格,求出到从(0,1)到(5,4)的方案数即可.在这道题中即可以先向左,也可以先向右.所以将求出的方案数*2即可.</p><p>如图所示：</p><p><img src="https://s2.ax1x.com/2019/08/21/mN3kiF.png" alt=""></p><p>由于n比较大，所以需要用矩阵快速幂优化,这里就跳过了.</p><h3 id="T3："><a href="#T3：" class="headerlink" title="T3："></a>T3：</h3><p>完全没得思路,想找循环发现不是,于是果断暴力走起。</p><p>正解是<del>神仙</del>类欧???  不会…</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="今日总结"><a href="#今日总结" class="headerlink" title="今日总结"></a>今日总结</h2><a id="more"></a><p>T1. 水（<del>可惜我不会打…</del>）</p><p>先bfs跑一遍洪水泛滥的，记录一下每个位置在哪一秒时被淹了。然后再bfs跑一遍人,在下一个时刻不能跑洪水泛滥的以及石头所在的，直到遇到住所中break就行了。</p><p>T2. 是一道状压题（<del>没看出来…</del>）跟棋盘放置差不多</p><p>打的dfs，死活printf不了long double,然后就手动保留小数（忘了进位问题…)然后就40。原来要用%Lf输出，95呐，就超时了一个点（<del>还是数据水</del>）</p><p>T3. 单调栈（<del>没听过…</del>)</p><p>T4. Tarjan缩点乱搞（<del>不会不会</del>）</p><hr><h4 id="看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（貌似吧考的都说完了）"><a href="#看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（貌似吧考的都说完了）" class="headerlink" title="看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（貌似吧考的都说完了）"></a>看来不会的还有很多呐！数据结构方面要加强，图论要加强，dp要加强，模拟要加强。（<del>貌似吧考的都说完了</del>）</h4>]]></content>
     
     <summary type="html">
     
