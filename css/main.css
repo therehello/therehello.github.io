@@ -1833,7 +1833,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9df490;
+  background: #baaa47;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3132,7 +3132,7 @@ pre .javascript .function {
   }
 }
 body {
-  background: url("https://img3.doubanio.com/view/photo/l/public/p2618797223.webp");
+  background: url("https://cdn.jsdelivr.net/gh/therehello/therehello.github.io@master/images/bizhi.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
